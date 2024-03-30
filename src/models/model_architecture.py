@@ -2,6 +2,9 @@ import torch.nn as nn
 import torch.nn.init as init
 
 class LenetModel(nn.Module):
+    """
+    Model architecture (Lenet)
+    """
     def __init__(self, channels, kernel_size, input_size, output_size, dropout):
         super(LenetModel, self).__init__()
 

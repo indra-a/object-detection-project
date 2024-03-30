@@ -1,0 +1,26 @@
+data:
+  labels_path: 
+  images_path:  
+
+preprocess:
+  resize: [224, 224]
+
+model:
+  name: lenet
+  num_classes: 10
+  pretrained: false
+
+optimizer:
+  name: Adam
+  lr: 0.01
+  momentum: 0.9
+  weight_decay: 0.0005
+
+lr_scheduler:
+  name: step
+  step_size: 10
+  gamma: 0.1
+
+train:
+  batch_size: 64
+  num_epochs: 50
