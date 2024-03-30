@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Projects/object-detection-project/mlruns/0/1c29d6ec7b244db28cc4b0fc84f2f2b1/artifacts
+end_time: 1711840072686
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1c29d6ec7b244db28cc4b0fc84f2f2b1
+run_name: wistful-mare-573
+run_uuid: 1c29d6ec7b244db28cc4b0fc84f2f2b1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711840034438
+status: 4
+tags: []
+user_id: sedee

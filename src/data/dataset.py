@@ -2,6 +2,7 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 import torchvision.transforms.functional as F
 from pathlib import Path
+from PIL import Image
 
 class FoveaDataset(Dataset):
     def __init__(self, data_path, labels_df, transforms):

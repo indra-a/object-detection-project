@@ -1,13 +1,18 @@
 data:
-  labels_path: 
-  images_path:  
+  label_path: "data/Training400/Fovea_location.xlsx"
+  images_path: "data/Training400/"
 
 preprocess:
   resize: [224, 224]
 
 model:
   name: lenet
-  num_classes: 10
+  channels: 32
+  kernel_size: 5
+  stride: 1
+  input_size: 224
+  output_size: 2
+  dropout: 0.0
   pretrained: false
 
 optimizer:
@@ -22,5 +27,5 @@ lr_scheduler:
   gamma: 0.1
 
 train:
-  batch_size: 64
+  batch_size: 32
   num_epochs: 50
