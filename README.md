@@ -74,7 +74,7 @@ pip install -r requirement.txt
 ```config.yaml
 data:
   label_path: # Enter path to labels xlsx
-  images_path: Enter path to directory of images
+  images_path: # Enter path to directory of images
 
 preprocess:
   resize: [224, 224]
@@ -92,3 +92,18 @@ model:
 ...
 ```
 
+<b>Training model</b>
+
+```
+python train.py
+```
+
+<b>Deployment</b>
+
+After training, you can deploy the model using the app/app.py script. This script loads the trained model from MLflow and creates a Streamlit application for serving the model.
+
+To run the deployment app, execute the following command:
+```
+streamlit run app/app.py
+```
+This will start the Streamlit server and open the application in your default web browser, where you can upload images and obtain predictions from the deployed model.
