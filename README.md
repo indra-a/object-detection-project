@@ -16,9 +16,7 @@ In my different much simpler project, I addressed the image classification probl
 |   README.md
 |   requirements.txt
 |   test.ipynb
-|   text.txt
 |   train.py
-|   tree.md
 |   
 +---app
 |       app.py
@@ -36,19 +34,11 @@ In my different much simpler project, I addressed the image classification probl
 |   |   |   data_preprocessing.py
 |   |   |   __init__.py
 |   |   |   
-|   |   \---__pycache__
-|   |           dataset.cpython-310.pyc
-|   |           data_augmentation.cpython-310.pyc
-|   |           data_preprocessing.cpython-310.pyc
-|   |           __init__.cpython-310.pyc
 |   |           
 |   +---models
 |   |   |   model_architecture.py
 |   |   |   optimizer.py
 |   |   |   
-|   |   \---__pycache__
-|   |           model_architecture.cpython-310.pyc
-|   |           optimizer.cpython-310.pyc
 |   |           
 |   +---utils
 |   |   |   data_utils.py
@@ -56,12 +46,7 @@ In my different much simpler project, I addressed the image classification probl
 |   |   |   mlflow_utils.py
 |   |   |   __init__.py
 |   |   |   
-|   |   \---__pycache__
-|   |           mlflow_utils.cpython-310.pyc
-|   |           __init__.cpython-310.pyc
 |   |           
-|   \---__pycache__
-|           __init__.cpython-310.pyc
 |           
 \---tests
         __init__.py
@@ -73,4 +58,37 @@ In my different much simpler project, I addressed the image classification probl
 
 1. Clone repository 
 
-```git clone https://github.com/indra-a/object-detection-project.git```
+```
+git clone https://github.com/indra-a/object-detection-project.git
+cd object-detection-project
+```
+
+2. Install packages 
+
+```
+pip install -r requirement.txt
+```
+
+3. Download data and make changes to ```config.yaml```
+
+```config.yaml
+data:
+  label_path: # Enter path to labels xlsx
+  images_path: Enter path to directory of images
+
+preprocess:
+  resize: [224, 224]
+
+model:
+  name: lenet
+  channels: 32
+  kernel_size: 5
+  stride: 1
+  input_size: 224
+  output_size: 2
+  dropout: 0.0
+  pretrained: false
+
+...
+```
+
