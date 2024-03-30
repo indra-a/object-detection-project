@@ -4,3 +4,4 @@ PIL
 pathlib
 mlflow
 tqdm
+yaml

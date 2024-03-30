@@ -4,7 +4,10 @@ from utils.mlflow_utils import log_metrics, log_params, log_model
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-def train_loop(model, train_loader, val_loader, optimizer, loss_function):
+with open("config.yml", "r") as f:
+    config = yaml.safe_load(f)
+
+def main(config):
     """
     Trains input model given dataloaders, optimizer and loss function,
     Tracking with MLFlow
@@ -13,7 +16,7 @@ def train_loop(model, train_loader, val_loader, optimizer, loss_function):
         mlflow.set_experiment("object-detection-project")
         log_params(self.params)
 
-        for epoch in tqdm(range(100), desc = 'Model training..' ):
+        for epoch in tqdm(range(config['train']['epoch']), desc = 'Model training..' ):
             loss = 0
             train_loss = 0
             for image, label in train_loader:
@@ -47,3 +50,6 @@ def train_loop(model, train_loader, val_loader, optimizer, loss_function):
                          "val_loss": val_loss})
             log_model(model, "model")
             return model
+
+if __name__ == "__main__":
+    main(config)
