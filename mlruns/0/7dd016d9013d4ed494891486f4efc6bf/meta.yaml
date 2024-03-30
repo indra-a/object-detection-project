@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Projects/object-detection-project/mlruns/0/7dd016d9013d4ed494891486f4efc6bf/artifacts
+end_time: 1711839427157
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7dd016d9013d4ed494891486f4efc6bf
+run_name: resilient-conch-973
+run_uuid: 7dd016d9013d4ed494891486f4efc6bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711839391668
+status: 4
+tags: []
+user_id: sedee

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Projects/object-detection-project/mlruns/0/bb5b9444cecf48099215f47bf6d1e7db/artifacts
+end_time: 1711840528312
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bb5b9444cecf48099215f47bf6d1e7db
+run_name: nebulous-pig-809
+run_uuid: bb5b9444cecf48099215f47bf6d1e7db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711840487363
+status: 3
+tags: []
+user_id: sedee

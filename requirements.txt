@@ -1,7 +1,7 @@
 torch
 torchvision
-PIL
+pillow
 pathlib
 mlflow
 tqdm
-yaml
+pyyaml
