@@ -1,0 +1,6 @@
+torch
+torchvision
+PIL
+pathlib
+mlflow
+tqdm
